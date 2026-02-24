@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0f;
+  color: #e0e0ff;
+  overflow-x: hidden;
+}
+
+/* Animated Star Background */
+#stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.glow {
+  color: #00f0ff;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+.subtitle {
+  color: #aa88ff;
+}
+
+nav {
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  background: #111122;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #00f0ff;
+  color: black;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #ff3366;
+  text-shadow: 0 0 10px #ff3366;
+}
+
+.card {
+  background: #111122cc;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid #00f0ff;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-left: 4px solid #ff3366;
+}
+
+/* Collapsible Animation */
+.collapsible .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
